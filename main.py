@@ -229,8 +229,8 @@ if option_selected == "Data Visualization":
         bus_type_counts = sql_bus_data['bus_type'].value_counts().reset_index()
         bus_type_counts.columns = ['bus_type', 'count']
         pie_chart = alt.Chart(bus_type_counts).mark_arc().encode(
-            theta=alt.Theta(field="count", type="quantitative"),
-            color=alt.Color(field="bus_type", type="nominal"),
+            theta=alt.Theta(field="count", type="quantitative", title='No. of Buses'),
+            color=alt.Color(field="bus_type", type="nominal", title='Bus Type'),
             tooltip=[                
                 alt.Tooltip('bus_type', title='Bus Type'), 
                 alt.Tooltip('count', title='No. of Buses')
