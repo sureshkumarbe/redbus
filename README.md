@@ -1,2 +1,2 @@
-# redbus
+# RedBus Project
 RedBus Web Scraping
