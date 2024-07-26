@@ -1,0 +1,5 @@
+streamlit
+selenium
+mysql-connector-python
+pandas
+sqlalchemy
